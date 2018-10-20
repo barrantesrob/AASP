@@ -21,7 +21,7 @@ export class PreguntasModelo {
             'TextoMinimo_es': 'Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
         }
-        , {
+       /* , {
             '0': 16.20339,
             '1': 16.20339,
             '2': 19.63889,
@@ -506,7 +506,7 @@ export class PreguntasModelo {
             'Alto': 4.30557,
             'Pregunta_es': '¿Cuál es el grado de escolaridad máximo alcanzado por su madre?',
             'PreguntaDetalle_es': 'Grado de escolaridad:'
-        }
+        }*/
         , {
             'Numero': 78,
             'Tipo': 4,

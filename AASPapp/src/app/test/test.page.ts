@@ -3,7 +3,7 @@ import { PreguntasService } from '../Servicios/preguntas.service';
 import { RespuestaPregunta } from '../Servicios/respuesta_pregunta.class';
 import { RespuestasService } from '../Servicios/respuestas.service';
 
-// import { Router } from '@angular/router';
+ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-test',
@@ -16,8 +16,8 @@ export class TestPage {
   indexPregunta = 0;
 
   constructor(private servicioPreguntas: PreguntasService,
-   private servicioRespuestas: RespuestasService
-  //  private _router: Router
+   private servicioRespuestas: RespuestasService,
+    private _router: Router
   ) {
       this.pregunta = this.servicioPreguntas.Obtener(0);
       console.log('pregunta', this.pregunta);
@@ -31,6 +31,7 @@ export class TestPage {
       this.servicioRespuestas.GuardarRespuesta(repuestaItem);
       this.respuesta = null;
     } else {
+      this._router.navigateByUrl('/tabs/(test:resultado)');
       // this._router.navigate(['RespuestaTest'], { replaceUrl: true});
       console.log('pregunta fin');
     }
