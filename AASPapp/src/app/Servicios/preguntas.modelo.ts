@@ -1,4 +1,4 @@
-/*export class PreguntasModelo {
+export class PreguntasModelo {
     public static Preguntas: any = [
         {
             '0': -1.90693,
@@ -520,4 +520,3 @@
     ];
 
 }
-*/
