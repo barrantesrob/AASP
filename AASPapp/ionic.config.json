@@ -1,0 +1,7 @@
+{
+  "name": "AASPapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
