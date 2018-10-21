@@ -23,16 +23,16 @@ export class TestPage {
       console.log('pregunta', this.pregunta);
   }
 
-  PreguntaSiguiente() {
+  PreguntaSiguiente(respuesta) {
+    console.log('PreguntaSiguiente respuesta', respuesta);
     this.indexPregunta = this.indexPregunta + 1;
     this.pregunta = this.servicioPreguntas.Obtener(this.indexPregunta);
     if (this.pregunta != null) {
-      const repuestaItem = new RespuestaPregunta(this.respuesta, this.pregunta);
+      const repuestaItem = new RespuestaPregunta(respuesta, this.pregunta);
       this.servicioRespuestas.GuardarRespuesta(repuestaItem);
       this.respuesta = null;
     } else {
       this._router.navigateByUrl('/tabs/(test:resultado)');
-      // this._router.navigate(['RespuestaTest'], { replaceUrl: true});
       console.log('pregunta fin');
     }
     console.log('pregunta', this.pregunta);

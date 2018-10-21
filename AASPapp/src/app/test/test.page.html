@@ -12,93 +12,16 @@
             <div text-justify>
                 {{pregunta.Pregunta_es}}
             </div>
-
             <ion-footer>
-                <div *ngIf="pregunta.Tipo == 1">
-                    <ion-range [(ngModel)]="respuesta" min="0" max="10" step="1" pin="true" snaps="true" color="primary">
-                        <ion-icon size="small" slot="start" name="remove"></ion-icon>
-                        <ion-icon slot="end" name="add"></ion-icon>
-                        <div slot="end">
-                            <div *ngIf="respuesta >= 0"> {{respuesta}}</div>
-                        </div>
-                    </ion-range>
-                    <ion-list>
-                        <ion-item>
-                            <div slot="start"> {{pregunta.TextoMaximo_es}}</div>
-                            <ion-label text-center>5</ion-label>
-                            <div slot="end"> {{pregunta.TextoMinimo_es}}</div>
-                        </ion-item>
-                    </ion-list>
-                </div>
-                <div *ngIf="pregunta.Tipo == 2">
-                    <ion-list>
-                        <ion-item>
-
-                            <ion-label color="primary" floating>{{pregunta.PreguntaDetalle_es}}</ion-label>
-                            <ion-input type="number" placeholder="{{pregunta.PreguntaDetalle_es}}" [(ngModel)]="respuesta"></ion-input>
-
-                        </ion-item>
-                    </ion-list>
-                </div>
-                <div *ngIf="pregunta.Tipo == 3">
-                    <ion-list>
-                        <ion-item>
-
-                            <ion-label color="primary">{{pregunta.PreguntaDetalle_es}}</ion-label>
-                            <ion-select value="brown" placeholder="{{pregunta.PreguntaDetalle_es}}" [(ngModel)]="respuesta" okText="Aceptar" cancelText="Cancelar">
-                                <ion-select-option value="1">Sin estudios</ion-select-option>
-                                <ion-select-option value="2">Primaria incompleta</ion-select-option>
-                                <ion-select-option value="3">Primaria completa</ion-select-option>
-                                <ion-select-option value="4">Secundaria incompleta</ion-select-option>
-                                <ion-select-option value="5">Secundaria completa</ion-select-option>
-                                <ion-select-option value="6">Universidad incompleta</ion-select-option>
-                                <ion-select-option value="7">Universidad completaa</ion-select-option>
-                            </ion-select>
-
-                        </ion-item>
-                    </ion-list>
-                </div>
-                <div *ngIf="pregunta.Tipo == 4">
-                    <ion-list>
-                        <ion-item>
-                            ¿Cuántas días y horas en promedio por día dedica a la actividad física intensa?
-                        </ion-item>
-                        <ion-item>
-                            <ion-label color="primary">Dias:</ion-label>
-                            <ion-input type="number" placeholder="Dias"></ion-input>
-                            <ion-label color="primary">Horas:</ion-label>
-                            <ion-input type="number" placeholder="horas"></ion-input>
-                        </ion-item>
-                        <ion-item>
-                            ¿Cuántas días y horas en promedio por día dedica a la actividad física moderada?
-                        </ion-item>
-                        <ion-item size="6">
-                            <ion-label color="primary">Dias:</ion-label>
-                            <ion-input type="number" placeholder="Dias"></ion-input>
-                            <ion-label color="primary">Horas:</ion-label>
-                            <ion-input type="number" placeholder="horas"></ion-input>
-                        </ion-item>
-                        <ion-item>
-                            ¿Cuántas horas en promedio por día dedica a caminar?
-                        </ion-item>
-                        <ion-item>
-                            <ion-label color="primary">Dias:</ion-label>
-                            <ion-input type="number" placeholder="Dias"></ion-input>
-
-                            <ion-label color="primary">Horas:</ion-label>
-                            <ion-input type="number" placeholder="horas"></ion-input>
-                        </ion-item>
-                    </ion-list>
-                </div>
+                <app-pregunta-escala *ngIf="pregunta.Tipo == 1" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
+                </app-pregunta-escala>
+                <app-pregunta-promedio *ngIf="pregunta.Tipo == 2" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
+                </app-pregunta-promedio>
+                <app-pregunta-escolaridad *ngIf="pregunta.Tipo == 3" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
+                </app-pregunta-escolaridad>
+                <app-pregunta-actividad *ngIf="pregunta.Tipo == 4" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
+                </app-pregunta-actividad>
             </ion-footer>
         </ion-card-content>
     </ion-card>
-
-
-
-
-
-
-    <ion-button shape="round" (click)="PreguntaSiguiente()" expand="block" fill="outline" [disabled]="!(respuesta >= 0)" [color]="!(respuesta >= 0) ? 'medium' : 'primary'">Pregunta siguiente</ion-button>
-
 </ion-content>

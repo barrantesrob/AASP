@@ -1,0 +1,20 @@
+<div>
+    <ion-list>
+        <ion-item>
+
+            <ion-label color="primary">{{pregunta.PreguntaDetalle_es}}</ion-label>
+            <ion-select value="brown" placeholder="{{pregunta.PreguntaDetalle_es}}" [(ngModel)]="respuesta" okText="Aceptar" cancelText="Cancelar">
+                <ion-select-option value="1">Sin estudios</ion-select-option>
+                <ion-select-option value="2">Primaria incompleta</ion-select-option>
+                <ion-select-option value="3">Primaria completa</ion-select-option>
+                <ion-select-option value="4">Secundaria incompleta</ion-select-option>
+                <ion-select-option value="5">Secundaria completa</ion-select-option>
+                <ion-select-option value="6">Universidad incompleta</ion-select-option>
+                <ion-select-option value="7">Universidad completaa</ion-select-option>
+            </ion-select>
+
+        </ion-item>
+    </ion-list>
+</div>
+
+<ion-button shape="round" (click)="PreguntaSiguiente()" expand="block" fill="outline" [disabled]="(respuesta === null)" [color]="(respuesta === null) ? 'medium' : 'primary'">Pregunta siguiente</ion-button>

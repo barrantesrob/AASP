@@ -1,0 +1,17 @@
+<div>
+    <ion-range [(ngModel)]="respuesta" min="0" max="10" step="1" pin="true" snaps="true" color="primary">
+        <ion-icon size="small" slot="start" name="remove"></ion-icon>
+        <ion-icon slot="end" name="add"></ion-icon>
+        <div slot="end">
+            <div *ngIf="respuesta >= 0"> {{respuesta}}</div>
+        </div>
+    </ion-range>
+    <ion-list>
+        <ion-item>
+            <div slot="start"> {{pregunta.TextoMaximo_es}}</div>
+            <ion-label text-center>5</ion-label>
+            <div slot="end"> {{pregunta.TextoMinimo_es}}</div>
+        </ion-item>
+    </ion-list>
+</div>
+<ion-button shape="round" (click)="PreguntaSiguiente()" expand="block" fill="outline" [disabled]="!(respuesta >= 0)" [color]="!(respuesta >= 0) ? 'medium' : 'primary'">Pregunta siguiente</ion-button>

@@ -1,0 +1,9 @@
+<div>
+    <ion-list>
+        <ion-item>
+            <ion-label color="primary" floating>{{pregunta.PreguntaDetalle_es}}</ion-label>
+            <ion-input type="number" placeholder="{{pregunta.PreguntaDetalle_es}}" [(ngModel)]="respuesta"></ion-input>
+        </ion-item>
+    </ion-list>
+</div>
+<ion-button shape="round" (click)="PreguntaSiguiente()" expand="block" fill="outline" [disabled]="(respuesta === null)" [color]="(respuesta === null) ? 'medium' : 'primary'">Pregunta siguiente</ion-button>

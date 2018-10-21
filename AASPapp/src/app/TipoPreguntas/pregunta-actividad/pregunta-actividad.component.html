@@ -1,0 +1,33 @@
+<div>
+    <ion-list>
+        <ion-item>
+            ¿Cuántas días y horas en promedio por día dedica a la actividad física intensa?
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary">Dias:</ion-label>
+            <ion-input [(ngModel)]="intensaDias" type="number" placeholder="Dias"></ion-input>
+            <ion-label color="primary">Horas:</ion-label>
+            <ion-input [(ngModel)]="intensaHoras" type="number" placeholder="horas"></ion-input>
+        </ion-item>
+        <ion-item>
+            ¿Cuántas días y horas en promedio por día dedica a la actividad física moderada?
+        </ion-item>
+        <ion-item size="6">
+            <ion-label color="primary">Dias:</ion-label>
+            <ion-input [(ngModel)]="moderadaDias" type="number" placeholder="Dias"></ion-input>
+            <ion-label color="primary">Horas:</ion-label>
+            <ion-input [(ngModel)]="moderadaHoras" type="number" placeholder="horas"></ion-input>
+        </ion-item>
+        <ion-item>
+            ¿Cuántas horas en promedio por día dedica a caminar?
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary">Dias:</ion-label>
+            <ion-input [(ngModel)]="caminarDias" type="number" placeholder="Dias"></ion-input>
+
+            <ion-label color="primary">Horas:</ion-label>
+            <ion-input [(ngModel)]="caminarHoras" type="number" placeholder="horas"></ion-input>
+        </ion-item>
+    </ion-list>
+</div>
+<ion-button shape="round" (click)="PreguntaSiguiente()" expand="block" fill="outline" [disabled]="!SonDatosValidos()" [color]="(!SonDatosValidos()) ? 'medium' : 'primary'">Pregunta siguiente</ion-button>
