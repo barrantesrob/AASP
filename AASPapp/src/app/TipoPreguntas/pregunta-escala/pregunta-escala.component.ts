@@ -14,6 +14,7 @@ export class PreguntaEscalaComponent  {
   }
 
   PreguntaSiguiente() {
+    console.log("this.respuesta", this.respuesta);
     this.respuestaNueva.emit(this.respuesta);
     this.respuesta = -1;
   }

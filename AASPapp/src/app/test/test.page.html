@@ -9,19 +9,29 @@
 <ion-content>
     <ion-card>
         <ion-card-content>
-            <div text-justify>
-                {{pregunta.Pregunta_es}}
+            <div *ngIf="!mostraResultado">
+                <div text-justify>
+                    {{pregunta.Pregunta_es}}
+                </div>
+                <ion-footer>
+                    <app-pregunta-escala *ngIf="pregunta.Tipo == 1" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
+                    </app-pregunta-escala>
+                    <app-pregunta-promedio *ngIf="pregunta.Tipo == 2" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
+                    </app-pregunta-promedio>
+                    <app-pregunta-escolaridad *ngIf="pregunta.Tipo == 3" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
+                    </app-pregunta-escolaridad>
+                    <app-pregunta-actividad *ngIf="pregunta.Tipo == 4" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
+                    </app-pregunta-actividad>
+                </ion-footer>
             </div>
-            <ion-footer>
-                <app-pregunta-escala *ngIf="pregunta.Tipo == 1" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
-                </app-pregunta-escala>
-                <app-pregunta-promedio *ngIf="pregunta.Tipo == 2" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
-                </app-pregunta-promedio>
-                <app-pregunta-escolaridad *ngIf="pregunta.Tipo == 3" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
-                </app-pregunta-escolaridad>
-                <app-pregunta-actividad *ngIf="pregunta.Tipo == 4" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
-                </app-pregunta-actividad>
-            </ion-footer>
+            <div *ngIf="mostraResultado">
+                <div text-justify>
+                    Resulatado:
+                </div>
+                <div>
+                    {{resultado}}
+                </div>
+            </div>
         </ion-card-content>
     </ion-card>
 </ion-content>

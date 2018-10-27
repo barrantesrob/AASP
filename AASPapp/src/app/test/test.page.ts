@@ -14,6 +14,10 @@ export class TestPage {
   respuesta = -1;
   pregunta: any;
   indexPregunta = 0;
+  mostraResultado = false;
+  resultado: number;
+
+
 
   constructor(private servicioPreguntas: PreguntasService,
    private servicioRespuestas: RespuestasService,
@@ -26,15 +30,24 @@ export class TestPage {
   PreguntaSiguiente(respuesta) {
     console.log('PreguntaSiguiente respuesta', respuesta);
     this.indexPregunta = this.indexPregunta + 1;
-    this.pregunta = this.servicioPreguntas.Obtener(this.indexPregunta);
-    if (this.pregunta != null) {
+    const pregunta = this.servicioPreguntas.Obtener(this.indexPregunta);
+    if (pregunta != null) {
       const repuestaItem = new RespuestaPregunta(respuesta, this.pregunta);
+      console.log('repuestaItem', repuestaItem);
       this.servicioRespuestas.GuardarRespuesta(repuestaItem);
       this.respuesta = null;
+      this.pregunta = pregunta;
     } else {
-      this._router.navigateByUrl('/tabs/(test:resultado)');
+      // this._router.navigateByUrl('/tabs/(test:resultado)');
       console.log('pregunta fin');
+      this.MostrarRespusta();
     }
     console.log('pregunta', this.pregunta);
+  }
+
+  private MostrarRespusta() {
+    this.mostraResultado = true;
+    this.resultado =  this.servicioRespuestas.ObtenerResultado();
+    console.log('respuesta', this.resultado);
   }
 }

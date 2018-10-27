@@ -508,7 +508,7 @@ export class PreguntasModelo {
             'Pregunta_es': '¿Cuál es el grado de escolaridad máximo alcanzado por su madre?',
             'PreguntaDetalle_es': 'Grado de escolaridad:'
         },*/
-         {
+        , {
             'Numero': 78,
             'Tipo': 4,
             'Bajo': -0.00083,
