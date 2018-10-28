@@ -8,11 +8,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FloatRangeComponentComponent } from './Componetes/float-range-component/float-range-component.component';
-import { FloatRangeComponent } from './Componetes/float-range/float-range.component';
 
 @NgModule({
-  declarations: [AppComponent, FloatRangeComponentComponent, FloatRangeComponent],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [

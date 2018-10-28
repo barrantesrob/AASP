@@ -11,6 +11,7 @@ import { PreguntaActividadComponent } from '../TipoPreguntas/pregunta-actividad/
 import { PreguntaEscalaPromedioComponent } from '../TipoPreguntas/pregunta-escala-promedio/pregunta-escala-promedio.component';
 
 
+
 @NgModule({
   imports: [
     IonicModule,

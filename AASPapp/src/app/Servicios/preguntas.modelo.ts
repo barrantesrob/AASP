@@ -20,7 +20,7 @@ export class PreguntasModelo {
             'Pregunta_es': 'Considero que puedo encontrar la manera de obtener lo que quiera, aunque alguien se me oponga, como resolver problemas difíciles si me esfuerzo lo suficiente,  acostumbro a persistir en lo que me propongo hasta que alcanzo mis metas. Tengo confianza en que puedo superar y resolver situaciones inesperadas. Cuando estoy en dificultades puedo permanecer tranquilo porque sea lo que sea, soy capaz de resolverlo porque normalmente se me ocurren varias alternativas de cómo salir adelante.',
             'TextoMinimo_es': 'Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
-        }/*
+        }
         , {
             '0': 16.20339,
             '1': 16.20339,
@@ -42,8 +42,7 @@ export class PreguntasModelo {
             'TextoMinimo_es': 'Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
         }
-        
-        ,{
+        , {
             '0': 21.74286,
             '1': 21.74286,
             '2': 25.53968,
@@ -420,7 +419,7 @@ export class PreguntasModelo {
             'Pregunta_es': 'La forma como me evalúan permite medir lo que realmente aprendo, valoran mi conocimiento más que mi memoria, evalúan mi razonamiento de las cosas nunca lo que me aprendo de memoria. Estoy seguro de que las calificaciones que obtengo en la evaluación son un indicador real de lo que aprendo en cada asignatura, por esta razon',
             'TextoMinimo_es': 'Nunca es así',
             'TextoMaximo_es': 'Siempre es así'
-        }*/
+        }
         ,  {
             'Numero': 80,
             'Tipo': 5,
@@ -429,7 +428,7 @@ export class PreguntasModelo {
             'Alto': 5.57065,
             'Pregunta_es': '¿Cuál es el promedio ponderado de las notas obtenido en el último periódo de estudio llevado a cabo?',
             'TextoMinimo_es': '0',
-            'TextoMaximo_es': '10'
+            'TextoMaximo_es': '100'
         }
         ,  {
             'Numero': 83,
@@ -439,7 +438,7 @@ export class PreguntasModelo {
             'Alto': 2.51187,
             'Pregunta_es': '¿¿Cuál es la nota promedio obtenida en el examen de bachillerato (Secundaria? (valores entre 0 y 10 puntos)?',
             'TextoMinimo_es': '0',
-            'TextoMaximo_es': '10'
+            'TextoMaximo_es': '100'
         }
         , {
             'Numero': 66,
@@ -467,7 +466,7 @@ export class PreguntasModelo {
             'Alto': -0.71139,
             'Pregunta_es': 'Cuál es el número promedio de estudiantes que asisten de manera regular a las clases que usted recibe?',
             'PreguntaDetalle_es': 'Número promedio:'
-        }/*
+        }
         , {
             'Numero': 73,
             'Tipo': 3,
@@ -485,7 +484,7 @@ export class PreguntasModelo {
             'Alto': 4.30557,
             'Pregunta_es': '¿Cuál es el grado de escolaridad máximo alcanzado por su madre?',
             'PreguntaDetalle_es': 'Grado de escolaridad:'
-        },
+        }
         , {
             'Numero': 78,
             'Tipo': 4,
@@ -494,7 +493,7 @@ export class PreguntasModelo {
             'Alto': -0.00110,
             'Pregunta_es': '¿Aproximadamente cuántas horas a la semana dedica usted a la actividad física? (No incluye los desplazamientos al trabajo o al centro de estudio)',
             'PreguntaDetalle_es': 'Grado de escolaridad:'
-        }*/
+        }
 
     ];
 

@@ -29,7 +29,7 @@ export class RespuestasService {
         console.log(respuesta);
       });
       ({ bajo, medio, alto } = this.SumarConstantes(bajo, medio, alto));
-      console.log('bajo, medio, alto', {bajo, medio, alto});
+      // console.log('bajo, medio, alto', {bajo, medio, alto});
       return this.EvaluarResultado(bajo, medio, alto);
     }
 
@@ -49,6 +49,4 @@ export class RespuestasService {
         return alto;
       }
   }
-
-    
 }

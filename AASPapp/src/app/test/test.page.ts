@@ -24,12 +24,12 @@ export class TestPage {
     private _router: Router
   ) {
       this.pregunta = this.servicioPreguntas.Obtener(0);
-      console.log('pregunta', this.pregunta);
+      // console.log('pregunta', this.pregunta);
   }
 
   PreguntaSiguiente(repuestaItem: RespuestaPregunta) {
     this.servicioRespuestas.GuardarRespuesta(repuestaItem);
-    console.log('repuestaItem', repuestaItem);
+    // console.log('repuestaItem', repuestaItem);
     this.indexPregunta = this.indexPregunta + 1;
     const pregunta = this.servicioPreguntas.Obtener(this.indexPregunta);
     if (pregunta != null) {
@@ -46,6 +46,6 @@ export class TestPage {
   private MostrarRespuesta() {
     this.mostraResultado = true;
     this.resultado =  this.servicioRespuestas.ObtenerResultado();
-    console.log('respuesta', this.resultado);
+    // console.log('respuesta', this.resultado);
   }
 }

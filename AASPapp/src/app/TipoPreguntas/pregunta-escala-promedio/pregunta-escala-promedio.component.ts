@@ -15,7 +15,8 @@ export class PreguntaEscalaPromedioComponent {
   }
 
   PreguntaSiguiente() {
-    const repuestaItem = new RespuestaPregunta(this.respuesta, this.respuesta, this.pregunta);
+    const valor = this.respuesta / 10;
+    const repuestaItem = new RespuestaPregunta(valor, this.respuesta, this.pregunta);
     this.respuestaNueva.emit(repuestaItem);
     this.respuesta = -1;
   }
