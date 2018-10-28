@@ -8,6 +8,7 @@ import { PreguntaEscalaComponent } from '../TipoPreguntas/pregunta-escala/pregun
 import { PreguntaPromedioComponent } from '../TipoPreguntas/pregunta-promedio/pregunta-promedio.component';
 import { PreguntaEscolaridadComponent } from '../TipoPreguntas/pregunta-escolaridad/pregunta-escolaridad.component';
 import { PreguntaActividadComponent } from '../TipoPreguntas/pregunta-actividad/pregunta-actividad.component';
+import { PreguntaEscalaPromedioComponent } from '../TipoPreguntas/pregunta-escala-promedio/pregunta-escala-promedio.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { PreguntaActividadComponent } from '../TipoPreguntas/pregunta-actividad/
     PreguntaEscalaComponent,
     PreguntaPromedioComponent,
     PreguntaEscolaridadComponent,
-    PreguntaActividadComponent]
+    PreguntaActividadComponent,
+    PreguntaEscalaPromedioComponent]
 })
 export class TestPageModule {}

@@ -420,21 +420,10 @@ export class PreguntasModelo {
             'Pregunta_es': 'La forma como me evalúan permite medir lo que realmente aprendo, valoran mi conocimiento más que mi memoria, evalúan mi razonamiento de las cosas nunca lo que me aprendo de memoria. Estoy seguro de que las calificaciones que obtengo en la evaluación son un indicador real de lo que aprendo en cada asignatura, por esta razon',
             'TextoMinimo_es': 'Nunca es así',
             'TextoMaximo_es': 'Siempre es así'
-        }
+        }*/
         ,  {
-            '0': 1,
-            '1': 1,
-            '2': 2,
-            '3': 3,
-            '4': 4,
-            '5': 5,
-            '6': 6,
-            '7': 7,
-            '8': 8,
-            '9': 9,
-            '10': 10,
             'Numero': 80,
-            'Tipo': 1,
+            'Tipo': 5,
             'Bajo': 4.70696,
             'Medio': 5.22484,
             'Alto': 5.57065,
@@ -443,26 +432,15 @@ export class PreguntasModelo {
             'TextoMaximo_es': '10'
         }
         ,  {
-            '0': 1,
-            '1': 1,
-            '2': 2,
-            '3': 3,
-            '4': 4,
-            '5': 5,
-            '6': 6,
-            '7': 7,
-            '8': 8,
-            '9': 9,
-            '10': 10,
             'Numero': 83,
-            'Tipo': 1,
+            'Tipo': 5,
             'Bajo': 1.98792,
             'Medio': 2.46023,
             'Alto': 2.51187,
             'Pregunta_es': '¿¿Cuál es la nota promedio obtenida en el examen de bachillerato (Secundaria? (valores entre 0 y 10 puntos)?',
             'TextoMinimo_es': '0',
             'TextoMaximo_es': '10'
-        }*/
+        }
         , {
             'Numero': 66,
             'Tipo': 2,
@@ -480,7 +458,7 @@ export class PreguntasModelo {
             'Alto': 0.60226,
             'Pregunta_es': '¿Cuál es el número promedio de horas de estudio que dedica por asignatura a la semana? (Considere realmente el tiempo de estudio, no el de asistencia a clases ni traslados al centro universitario)',
             'PreguntaDetalle_es': 'Promedio de horas:'
-        }/*
+        }
         , {
             'Numero': 79,
             'Tipo': 2,
@@ -489,7 +467,7 @@ export class PreguntasModelo {
             'Alto': -0.71139,
             'Pregunta_es': 'Cuál es el número promedio de estudiantes que asisten de manera regular a las clases que usted recibe?',
             'PreguntaDetalle_es': 'Número promedio:'
-        }
+        }/*
         , {
             'Numero': 73,
             'Tipo': 3,
