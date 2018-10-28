@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ReturnStatement } from '@angular/compiler';
+import { RespuestaPregunta } from '../../Servicios/respuesta_pregunta.class';
 
 @Component({
   selector: 'app-pregunta-actividad',
@@ -9,7 +10,7 @@ import { ReturnStatement } from '@angular/compiler';
 export class PreguntaActividadComponent  {
   respuesta?: number = null;
   @Input() pregunta;
-  @Output() respuestaNueva = new EventEmitter<number>();
+  @Output() respuestaNueva = new EventEmitter<RespuestaPregunta>();
 
   intensaDias?: number = null;
   intensaHoras?: number = null;
@@ -47,8 +48,10 @@ export class PreguntaActividadComponent  {
 
   PreguntaSiguiente() {
     this.respuesta =  this.CalcularRespuesta();
-    console.log('Respuesta', this.respuesta );
-    this.respuestaNueva.emit(this.respuesta);
+    // console.log('this.respuesta', this.respuesta);
+    const repuestaItem = new RespuestaPregunta(this.respuesta , 0, this.pregunta);
+    // console.log('this.repuestaItem', repuestaItem);
+    this.respuestaNueva.emit(repuestaItem);
     this.respuesta = null;
   }
 

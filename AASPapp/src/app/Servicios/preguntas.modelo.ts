@@ -462,7 +462,7 @@ export class PreguntasModelo {
             'Pregunta_es': '¿¿Cuál es la nota promedio obtenida en el examen de bachillerato (Secundaria? (valores entre 0 y 10 puntos)?',
             'TextoMinimo_es': '0',
             'TextoMaximo_es': '10'
-        }
+        }*/
         , {
             'Numero': 66,
             'Tipo': 2,
@@ -480,7 +480,7 @@ export class PreguntasModelo {
             'Alto': 0.60226,
             'Pregunta_es': '¿Cuál es el número promedio de horas de estudio que dedica por asignatura a la semana? (Considere realmente el tiempo de estudio, no el de asistencia a clases ni traslados al centro universitario)',
             'PreguntaDetalle_es': 'Promedio de horas:'
-        }
+        }/*
         , {
             'Numero': 79,
             'Tipo': 2,
@@ -507,7 +507,7 @@ export class PreguntasModelo {
             'Alto': 4.30557,
             'Pregunta_es': '¿Cuál es el grado de escolaridad máximo alcanzado por su madre?',
             'PreguntaDetalle_es': 'Grado de escolaridad:'
-        },*/
+        },
         , {
             'Numero': 78,
             'Tipo': 4,
@@ -516,7 +516,7 @@ export class PreguntasModelo {
             'Alto': -0.00110,
             'Pregunta_es': '¿Aproximadamente cuántas horas a la semana dedica usted a la actividad física? (No incluye los desplazamientos al trabajo o al centro de estudio)',
             'PreguntaDetalle_es': 'Grado de escolaridad:'
-        }
+        }*/
 
     ];
 

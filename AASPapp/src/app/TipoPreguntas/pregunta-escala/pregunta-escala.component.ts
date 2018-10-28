@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { RespuestaPregunta } from '../../Servicios/respuesta_pregunta.class';
 
 @Component({
   selector: 'app-pregunta-escala',
@@ -8,14 +9,16 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class PreguntaEscalaComponent  {
   respuesta = -1;
   @Input() pregunta;
-  @Output() respuestaNueva = new EventEmitter<number>();
+  @Output() respuestaNueva = new EventEmitter<RespuestaPregunta>();
 
   constructor() {
   }
 
   PreguntaSiguiente() {
-    console.log("this.respuesta", this.respuesta);
-    this.respuestaNueva.emit(this.respuesta);
+    const index: string =  this.respuesta.toString();
+    const valor =  this.pregunta[index];
+    const repuestaItem = new RespuestaPregunta(valor, this.respuesta, this.pregunta);
+    this.respuestaNueva.emit(repuestaItem);
     this.respuesta = -1;
   }
 }

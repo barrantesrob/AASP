@@ -15,7 +15,6 @@ export class RespuestasService {
 
   GuardarRespuesta(respuesta: RespuestaPregunta) {
     this.respuestas.push(respuesta);
-    console.log('respuestas', this.respuestas);
   }
 
   ObtenerResultado() {
