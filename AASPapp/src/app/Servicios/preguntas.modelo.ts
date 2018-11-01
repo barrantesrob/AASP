@@ -20,7 +20,7 @@ export class PreguntasModelo {
             'Pregunta_es': 'Considero que puedo encontrar la manera de obtener lo que quiera, aunque alguien se me oponga, como resolver problemas difíciles si me esfuerzo lo suficiente,  acostumbro a persistir en lo que me propongo hasta que alcanzo mis metas. Tengo confianza en que puedo superar y resolver situaciones inesperadas. Cuando estoy en dificultades puedo permanecer tranquilo porque sea lo que sea, soy capaz de resolverlo porque normalmente se me ocurren varias alternativas de cómo salir adelante.',
             'TextoMinimo_es': 'Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
-        }
+        } /*
         , {
             '0': 16.20339,
             '1': 16.20339,
@@ -42,7 +42,7 @@ export class PreguntasModelo {
             'TextoMinimo_es': 'Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
         }
-        /*, {
+        , {
             '0': 21.74286,
             '1': 21.74286,
             '2': 25.53968,

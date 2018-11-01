@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { PreguntasService } from '../Servicios/preguntas.service';
 import { RespuestaPregunta } from '../Servicios/respuesta_pregunta.class';
 import { RespuestasService } from '../Servicios/respuestas.service';
-
- import { Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Resultado, EnumClasificacion } from '../Servicios/resultado.class';
 import { SemaforoDatos, ColorSemaforo } from '../Servicios/semaforo.datos';
 
@@ -17,6 +16,7 @@ export class TestPage {
   pregunta: any;
   indexPregunta = 0;
   mostraResultado = false;
+  mostraSituacionActual = false;
   resultado: Resultado;
   datosSemaforo = SemaforoDatos.DatosDelSemaforo;
 
@@ -40,7 +40,7 @@ export class TestPage {
   }
 
   private MostrarRespuesta() {
-    this.mostraResultado = true;
+    this.mostraSituacionActual = true;
     this.resultado =  this.servicioRespuestas.ObtenerResultado();
     this.MostrarSemaforo();
     // console.log('respuesta', this.resultado);
