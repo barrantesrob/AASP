@@ -42,7 +42,7 @@ export class PreguntasModelo {
             'TextoMinimo_es': 'Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
         }
-        , {
+        /*, {
             '0': 21.74286,
             '1': 21.74286,
             '2': 25.53968,
@@ -493,7 +493,7 @@ export class PreguntasModelo {
             'Alto': -0.00110,
             'Pregunta_es': '¿Aproximadamente cuántas horas a la semana dedica usted a la actividad física? (No incluye los desplazamientos al trabajo o al centro de estudio)',
             'PreguntaDetalle_es': 'Grado de escolaridad:'
-        }
+        }*/
 
     ];
 

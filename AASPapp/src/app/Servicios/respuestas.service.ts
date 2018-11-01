@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { RespuestaPregunta } from './respuesta_pregunta.class';
+import { Resultado, EnumClasificacion } from './resultado.class';
 
 @Injectable({
   providedIn: 'root'
@@ -26,10 +27,8 @@ export class RespuestasService {
         bajo += respuesta.Bajo;
         medio += respuesta.Medio;
         alto += respuesta.Alto;
-        console.log(respuesta);
       });
       ({ bajo, medio, alto } = this.SumarConstantes(bajo, medio, alto));
-      // console.log('bajo, medio, alto', {bajo, medio, alto});
       return this.EvaluarResultado(bajo, medio, alto);
     }
 
@@ -40,13 +39,13 @@ export class RespuestasService {
     return { bajo, medio, alto };
   }
 
-  private EvaluarResultado(bajo: number, medio: number, alto: number): number {
+  private EvaluarResultado(bajo: number, medio: number, alto: number): Resultado {
     if (bajo > medio && bajo > alto) {
-      return bajo;
+      return new Resultado(EnumClasificacion.Bajo, bajo);
       } else if (medio > alto && medio > bajo) {
-        return medio;
+        return new Resultado(EnumClasificacion.Medio, medio);
       } else {
-        return alto;
+        return new Resultado(EnumClasificacion.Alto, alto);
       }
   }
 }

@@ -1,7 +1,7 @@
 <ion-header>
     <ion-toolbar>
         <ion-title>
-            AASP
+            AASP {{pregunta.Numero}}
         </ion-title>
     </ion-toolbar>
 </ion-header>
@@ -27,15 +27,36 @@
                 </ion-footer>
             </div>
             <div *ngIf="mostraResultado">
-                <div text-justify>
-                    Resulatado:
-                </div>
-                <div>
-                    {{resultado}}
-                </div>
-                <diV>
-                    <pre class="list-group-item-text"> {{servicioRespuestas.respuestas | json }} </pre>
-                </diV>
+                <ion-list *ngFor="let datos of datosSemaforo">
+                    <ion-header no-border>
+                        <ion-item no-padding>
+                            <strong *ngIf="datos.Items.length > 1">{{datos.Escala}}</strong>
+                            <strong *ngIf="datos.Items.length == 1">{{datos.Items[0].Nombre}}</strong>
+                            <ion-icon *ngIf="datos.Items.length == 1" slot="end" color="success" name="radio-button-on"></ion-icon>
+                        </ion-item>
+                    </ion-header>
+                    <div *ngIf="datos.Items.length > 1">
+                        <ion-item *ngFor="let item of datos.Items">
+                            {{item.Nombre}}
+                            <ion-icon slot="end" [color]="ObtenerColorSemaforo(item.Color)" name="radio-button-on"></ion-icon>
+                        </ion-item>
+                    </div>
+                </ion-list>
+                <!--
+
+                    <div text-justify>
+                        Resulatado:
+                    </div>
+                    <DIV>
+                        {{resultado | json}}
+                    </DIV>
+                    <div>
+                        Detalle por pregunta:
+                    </div>
+                    <diV>
+                        <pre class="list-group-item-text"> {{servicioRespuestas.respuestas | json }} </pre>
+                    </diV>
+                -->
             </div>
         </ion-card-content>
     </ion-card>
