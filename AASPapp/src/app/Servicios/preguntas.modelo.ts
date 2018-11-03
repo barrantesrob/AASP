@@ -450,13 +450,25 @@ export class PreguntasModelo {
             'PreguntaDetalle_es': 'Número de horas:'
         }
         , {
+             '0': 1.08497,
+            '1': 1.08497,
+            '2': 2.03994,
+            '3': 2.85285,
+            '4': 3.55261,
+            '5': 4.00721,
+            '6': 4.85958,
+            '7': 5.86207,
+            '8': 7.03905,
+            '9': 8.40741,
+            '10': 13.34234,
             'Numero': 67,
-            'Tipo': 2,
+            'Tipo': 1,
             'Bajo': 0.56728,
             'Medio': 0.87892,
             'Alto': 0.60226,
-            'Pregunta_es': '¿Cuál es el número promedio de horas de estudio que dedica por asignatura a la semana? (Considere realmente el tiempo de estudio, no el de asistencia a clases ni traslados al centro universitario)',
-            'PreguntaDetalle_es': 'Promedio de horas:'
+            'Pregunta_es': '¿Cuál es su nivel en algún idioma extranjero?',
+            'TextoMinimo_es': 'Nada',
+            'TextoMaximo_es': 'Dominio total'
         }
         , {
             'Numero': 79,

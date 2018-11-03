@@ -1,0 +1,44 @@
+<ion-grid no-padding>
+    <ion-row>
+        <ion-col size="4"></ion-col>
+        <ion-col text-center class="cell-1">
+            {{Indicador.Detalle}}
+        </ion-col>
+    </ion-row>
+    <ion-row style="border-bottom: groove;">
+        <ion-col size="4">
+            <strong>
+               INDICADOR
+           </strong>
+        </ion-col>
+        <ion-col text-center class="cell-2">
+            <strong>
+                        Inferior
+                    </strong>
+        </ion-col>
+        <ion-col text-center class="cell-3">
+            <strong>
+                        Media
+                    </strong>
+        </ion-col>
+        <ion-col text-center class="cell-4">
+            <strong>
+                        Superior
+                    </strong>
+        </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let item of Indicador.Items">
+        <ion-col size="4">
+            {{item.NombreIndicador}}
+        </ion-col>
+        <ion-col text-center class="cell-2">
+            {{item.LimiteInferior}}
+        </ion-col>
+        <ion-col text-center class="cell-3">
+            {{item.Media}}
+        </ion-col>
+        <ion-col text-center class="cell-4">
+            {{item.LimiteSuperior}}
+        </ion-col>
+    </ion-row>
+</ion-grid>
