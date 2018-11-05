@@ -1,10 +1,18 @@
 <div>
     <ion-range class="Rango" [(ngModel)]="respuesta" min="0" max="100" step="5" pin="true" snaps="true" color="primary">
-        <ion-icon size="small" slot="start" name="remove"></ion-icon>
+        <div slot="start">
+            <ion-label padding-right>( 0 )</ion-label>
+        </div>
+        <div slot="end">
+            <ion-label padding-left> ( 100 ) </ion-label>
+        </div>
+
+        <!--  <ion-icon size="small" slot="start" name="remove"></ion-icon>
         <ion-icon slot="end" name="add"></ion-icon>
         <div slot="end">
             <div no-padding *ngIf="respuesta >= 0"> {{respuesta}}</div>
         </div>
+    --->
     </ion-range>
     <ion-list no-margin>
         <ion-item>

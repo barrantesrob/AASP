@@ -1,6 +1,6 @@
 export class PreguntasModelo {
     public static Preguntas: any = [
-        {
+       {
             '0': -1.90693,
             '1': -1.90693,
             '2': -0.95079,
@@ -20,7 +20,7 @@ export class PreguntasModelo {
             'Pregunta_es': 'Considero que puedo encontrar la manera de obtener lo que quiera, aunque alguien se me oponga, como resolver problemas difíciles si me esfuerzo lo suficiente,  acostumbro a persistir en lo que me propongo hasta que alcanzo mis metas. Tengo confianza en que puedo superar y resolver situaciones inesperadas. Cuando estoy en dificultades puedo permanecer tranquilo porque sea lo que sea, soy capaz de resolverlo porque normalmente se me ocurren varias alternativas de cómo salir adelante.',
             'TextoMinimo_es': 'Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
-        } /*
+       } /*
         , {
             '0': 16.20339,
             '1': 16.20339,
@@ -38,7 +38,7 @@ export class PreguntasModelo {
             'Bajo': -0.77223,
             'Medio': -1.05979,
             'Alto': -1.06363,
-            'Pregunta_es': 'Siempre tengo confianza en las estrategias que utilizo para aprender algo, por eso tengo claro cuándo y porqué debo utilizar una forma u otra para estudiar, dado que no tengo una forma única ni utilizo los mismos procedimientos para aprender, todo esto porque sé con precisión lo que debo estudiar de cada asignatura, pero si fallo en algo, también cambio la forma de estudiar o me esfuerzo más para mejorar el resultado anterior.',
+            'Pregunta_es': 'Siempre tengo confianza en las estrategias que utilizo para aprender algo, por eso tengo claro cuándo y porqué debo utilizar una forma u otra para estudiar. Dado que no tengo una forma única ni utilizo los mismos procedimientos para aprender, todo esto porque sé con precisión lo que debo estudiar de cada asignatura, pero si fallo en algo, también cambio la forma de estudiar o me esfuerzo más para mejorar el resultado anterior.',
             'TextoMinimo_es': 'Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
         }
@@ -164,9 +164,9 @@ export class PreguntasModelo {
             'Bajo': 2.40051,
             'Medio': 2.10599,
             'Alto': 3.15549,
-            'Pregunta_es': 'Para mí el estudiar es duro y aburrido, me cuesta mucho ponerme a estudiar en serio, por eso el estudio es algo que me guste, pero no tanto',
-            'TextoMinimo_es': 'Siempre',
-            'TextoMaximo_es': 'Nunca'
+            'Pregunta_es': 'Para mí el estudiar es fácil y divertido, no me cuesta mucho ponerme a estudiar en serio, por eso el estudio es algo que me gusta mucho',
+            'TextoMinimo_es': 'Nunca',
+            'TextoMaximo_es': 'Siempre'
         },
         {
             '0': 7.31818,
@@ -227,7 +227,7 @@ export class PreguntasModelo {
             'Bajo': 0.24755,
             'Medio': 0.27249,
             'Alto': 0.15675,
-            'Pregunta_es': 'En lo que respecta a la forma de aprender, me implico y me involucro completamente y sin prejuicio para experimentar nuevas experiencias; los desafíos alimentan mis deseos por aprender, pero las actividades que requieren mucho tiempo me aburren; tengo una mente abierta y espontánea, actúo primero y luego veo las consecuencias, no me gustan las actividades pasivas, me motiva la innovación, normalmente improviso y arriesgo.',
+            'Pregunta_es': 'En lo que respecta a la forma de aprender me implico e involucro completamente y sin prejuicio para experimentar nuevas experiencias académicas. Los desafíos alimentan mis deseos por aprender, pero las actividades que requieren mucho tiempo y que sean pasivas me aburren. Tengo una mente abierta y espontánea, me motiva la innovación, normalmente improviso y arriesgo en la forma de aprender.',
             'TextoMinimo_es': 'Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
         },
@@ -248,7 +248,7 @@ export class PreguntasModelo {
             'Bajo': 0.41162,
             'Medio': 0.50472,
             'Alto': 0.55539,
-            'Pregunta_es': 'Reconozco el proceso de aprendizaje a través de nuevas experiencias, pero no me involucro o implico directamente; siempre reúno datos, los analizo con detalle antes de tomar una decisión o conclusión; aprendo mucho escuchando a otras personas. Participo en clase hasta que tenga suficiente confianza en el grupo y sienta que valoren mi opinión. Estudio de manera sistemática, me gustan las actividades en las que tengo tiempo para pensar, donde pueda planificar y organizarme. Siempre realizo análisis con detenimiento y tomo decisiones evaluando los pros y los contras, siempre soy analítico, exhaustivo, consciente y actúo con tacto y prudencia.',
+            'Pregunta_es': 'Reconozco el proceso de aprendizaje a través de nuevas experiencias, pero no me involucro o implico directamente. Siempre reúno datos, los analizo con detalle antes de tomar una decisión o conclusión; aprendo mucho escuchando a otras personas. Estudio de manera sistemática, me gustan las actividades en las que tengo tiempo para pensar, donde pueda planificar y organizarme. Siempre soy analítico, exhaustivo, consciente y actúo con tacto y prudencia.',
             'TextoMinimo_es': 'Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
         },
@@ -311,7 +311,7 @@ export class PreguntasModelo {
             'Bajo': 0.25102,
             'Medio': 1.33729,
             'Alto': 0.79223,
-            'Pregunta_es': 'Estudio de manera constante durante el periodo de estudio en lugar de dejarlo todo para el final, por ello, organizo mi tiempo cuidadosamente para hacer el mejor uso de este, en ese lapso que tengo para estudiar me aseguro de hacer todo lo que necesito.',
+            'Pregunta_es': 'Estudio de manera constante durante el periodo de clases en lugar de dejarlo todo para el final, por ello, organizo mi tiempo cuidadosamente para hacer el mejor uso de este, mientras estudio me aseguro de hacer todo lo que necesito.',
             'TextoMinimo_es':' Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
         },
@@ -332,7 +332,7 @@ export class PreguntasModelo {
             'Bajo': -0.57903,
             'Medio': -0.61588,
             'Alto': -0.80489,
-            'Pregunta_es': 'Cuando estudio procuro comprender el área de estudio, dado que necesito relacionar un grupo de procesos de aprendizaje que estén asociados. Siempre estoy entusiasmado e interesado en mis actividades académicas, busco relacionar ideas, me esfuerzo de manera importante para comprender y entender la información, para ello, construyo perfiles y estructuras de conocimiento, tiendo a cuestionar y criticar las cosas, pero tomando en cuenta la evidencia real del objeto de estudio. Es de suma importancia para mi tener claro el objetivo central de lo que estudio para concluir correctamente, en resumen, le busco el significado a las cosas, relaciono ideas, uso evidencias, tengo interés por las ideas y controlo mi eficacia.',
+            'Pregunta_es': 'Cuando estudio procuro comprender el área de estudio, dado que necesito relacionar un grupo de procesos de aprendizaje que estén asociados. Siempre estoy entusiasmado e interesado en mis actividades académicas, busco relacionar ideas, me esfuerzo mucho para comprender y entender la información, para ello, construyo perfiles y estructuras de conocimiento, tiendo a cuestionar y criticar las cosas, pero tomando en cuenta la evidencia real del objeto de estudio. Es de suma importancia para mi tener claro el objetivo central de lo que estudio para concluir correctamente.',
             'TextoMinimo_es': 'Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
         },
@@ -353,7 +353,7 @@ export class PreguntasModelo {
             'Bajo': -0.18033,
             'Medio': -0.54709,
             'Alto': -0.29869,
-            'Pregunta_es': 'Yo me preocupo por mis estudios para lograr las mejores calificaciones, soy estratégico en mi forma de estudiar, en algunas situaciones estudio de manera superficial y en otras lo hago de manera más profunda. No utilizo una sola forma de estudiar, puedo pasar de una forma a otra siempre que logre los objetivos que busco que es aprobar la asignatura. Normalmente memorizo los contenidos de la materia para no fracasar y así alcanzar el éxito al final de periodo académico. También le pongo mucha atención a lo que se evalúa concretamente para estudiar eso de manera específica y no perder tiempo con temas que no vayan a evaluar.',
+            'Pregunta_es': 'Yo me preocupo por mis estudios para lograr las mejores calificaciones, soy estratégico en mi forma de estudiar. En algunas situaciones estudio de manera superficial y en otras lo hago de manera más profunda. No utilizo una sola forma de estudiar, puedo pasar de una forma a otra siempre que logre los objetivos que busco que es aprobar la asignatura. Normalmente memorizo los contenidos de la materia para no fracasar y así alcanzar el éxito al final de periodo académico. También le pongo mucha atención a lo que se evalúa concretamente para estudiar eso de manera específica y no perder tiempo con temas que no vayan a evaluar.',
             'TextoMinimo_es': 'Nunca soy así',
             'TextoMaximo_es': 'Siempre soy así'
         },
@@ -374,7 +374,7 @@ export class PreguntasModelo {
             'Bajo': 1.00132,
             'Medio': 1.30603,
             'Alto': 1.30971,
-            'Pregunta_es': 'Cuando estudio lo hago en un lugar adecuado, con adecuada luz, temperatura, ventilación, sin ruidos y no tengo materiales innecesarios en lugar de estudio, este ambiente me permite concentrarme lo que me permite aprovechar el tiempo.',
+            'Pregunta_es': 'Cuando estudio lo hago en un lugar adecuado, con buena iluminación, temperatura, ventilación, sin ruidos y no tengo materiales innecesarios en el lugar de estudio. El ambiente donde estudio me permite concentrarme y aprovechar el tiempo.',
             'TextoMinimo_es': 'Nunca',
             'TextoMaximo_es': 'Siempre'
         },
@@ -416,7 +416,7 @@ export class PreguntasModelo {
             'Bajo': 0.64848,
             'Medio': 0.12690,
             'Alto': 0.41367,
-            'Pregunta_es': 'La forma como me evalúan permite medir lo que realmente aprendo, valoran mi conocimiento más que mi memoria, evalúan mi razonamiento de las cosas nunca lo que me aprendo de memoria. Estoy seguro de que las calificaciones que obtengo en la evaluación son un indicador real de lo que aprendo en cada asignatura, por esta razon',
+            'Pregunta_es': 'La forma como me evalúan permite medir lo que realmente aprendo, valoran mi conocimiento más que mi memoria, evalúan mi razonamiento de las cosas nunca lo que me aprendo de memoria. Estoy seguro de que las calificaciones que obtengo en la evaluación son un indicador real de lo que aprendo en cada asignatura, por esta razón mi rendimiento académico depende de que se evalúe realmente los conocimientos adquiridos.',
             'TextoMinimo_es': 'Nunca es así',
             'TextoMaximo_es': 'Siempre es así'
         }
@@ -426,7 +426,7 @@ export class PreguntasModelo {
             'Bajo': 4.70696,
             'Medio': 5.22484,
             'Alto': 5.57065,
-            'Pregunta_es': '¿Cuál es el promedio ponderado de las notas obtenido en el último periódo de estudio llevado a cabo?',
+            'Pregunta_es': '¿Cuál es el promedio ponderado de las notas obtenido en el último periodo de estudio realizado? (valores entre 0 y 100 puntos)',
             'TextoMinimo_es': '0',
             'TextoMaximo_es': '100'
         }
@@ -436,7 +436,7 @@ export class PreguntasModelo {
             'Bajo': 1.98792,
             'Medio': 2.46023,
             'Alto': 2.51187,
-            'Pregunta_es': '¿¿Cuál es la nota promedio obtenida en el examen de bachillerato (Secundaria? (valores entre 0 y 10 puntos)?',
+            'Pregunta_es': '¿Cuál es la nota promedio obtenida en el examen de bachillerato (Secundaria)? (valores entre 0 y 100 puntos)',
             'TextoMinimo_es': '0',
             'TextoMaximo_es': '100'
         }
@@ -446,7 +446,7 @@ export class PreguntasModelo {
             'Bajo': -0.21947,
             'Medio': -0.29931,
             'Alto': -0.14504,
-            'Pregunta_es': '¿Cuál es el número promedio de horas de estudio que dedica a sus estudios durante la semana? (Considere realmente el tiempo de estudio, no el de asistencia a clases ni traslados al centro de estudio)',
+            'Pregunta_es': '¿Cuál es el número promedio de horas de estudios que dedica durante la semana? (Considere realmente el tiempo de estudio, no el de asistencia a clases ni traslados al centro de estudio)',
             'PreguntaDetalle_es': 'Número de horas:'
         }
         , {
@@ -466,7 +466,7 @@ export class PreguntasModelo {
             'Bajo': 0.56728,
             'Medio': 0.87892,
             'Alto': 0.60226,
-            'Pregunta_es': '¿Cuál es su nivel en algún idioma extranjero?',
+            'Pregunta_es': '¿Cuál es su nivel en algún idioma extranjero? (Si conoce más de un idioma extranjero, opine sobre el que domine más)',
             'TextoMinimo_es': 'Nada',
             'TextoMaximo_es': 'Dominio total'
         }
@@ -476,7 +476,7 @@ export class PreguntasModelo {
             'Bajo': -0.50604,
             'Medio': -0.71441,
             'Alto': -0.71139,
-            'Pregunta_es': 'Cuál es el número promedio de estudiantes que asisten de manera regular a las clases que usted recibe?',
+            'Pregunta_es': '¿Cuál es el número promedio de estudiantes que asisten de manera regular a las clases o tutorías que usted recibe?',
             'PreguntaDetalle_es': 'Número promedio:'
         }
         , {
@@ -503,7 +503,7 @@ export class PreguntasModelo {
             'Bajo': -0.00083,
             'Medio': -0.00117,
             'Alto': -0.00110,
-            'Pregunta_es': '¿Aproximadamente cuántas horas a la semana dedica usted a la actividad física? (No incluye los desplazamientos al trabajo o al centro de estudio)',
+            'Pregunta_es': '¿Aproximadamente cuántas horas a la semana dedica usted a la actividad física intensa, moderada o a caminar?',
             'PreguntaDetalle_es': 'Grado de escolaridad:'
         }*/
 

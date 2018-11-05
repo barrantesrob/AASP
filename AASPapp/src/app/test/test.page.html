@@ -33,20 +33,37 @@
 <ion-content *ngIf="mostraSituacionActual">
     <div>
         <ion-card-header>
-            <h2 text-center>
-                Percentil del rendimiento académico esperado: <strong>
-                                        <ion-badge>{{resultado.Percentil | number:'.2'}}%</ion-badge>            
-                                        </strong>
-            </h2>
+            <h1 text-center>
+                Resultado
+            </h1>
         </ion-card-header>
-        <diV text-center>
 
-            <app-grafico [Percentil]="resultado.Percentil"></app-grafico>
-        </diV>
-        <app-indicadores padding [Percentil]="resultado.Percentil"></app-indicadores>
+
+
+        <ion-button (click)="irPerfilActua();" shape="round" expand="block" fill="outline">Perfil Actual</ion-button>
         <br>
-        <div padding>
-            <app-situacion-actual></app-situacion-actual>
-        </div>
+        <ion-button shape="round" expand="block" fill="outline">Percentil del rendimiento académico</ion-button>
+        <br>
+        <ion-button shape="round" expand="block" fill="outline">Sugerencias pedagógicas</ion-button>
+
+
+        <!--
+            <ion-card-header>
+                <h2 text-center>
+                    Percentil del rendimiento académico esperado: <strong>
+                        <ion-badge>{{resultado.Percentil | number:'.1'}}%</ion-badge>            
+                    </strong>
+                </h2>
+            </ion-card-header>
+            <diV text-center>
+                
+                <app-grafico [Percentil]="resultado.Percentil"></app-grafico>
+            </diV>
+            <app-indicadores padding [Percentil]="resultado.Percentil"></app-indicadores>
+            <br>
+            <div padding>
+                <app-situacion-actual></app-situacion-actual>
+            </div>
+        -->
     </div>
 </ion-content>

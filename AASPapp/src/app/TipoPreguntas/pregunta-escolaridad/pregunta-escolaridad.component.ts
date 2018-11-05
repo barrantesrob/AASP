@@ -13,11 +13,14 @@ export class PreguntaEscolaridadComponent {
   @Output() respuestaNueva = new EventEmitter<RespuestaPregunta>();
 
   constructor() {
+    console.log('respuesta', this.respuesta);
   }
 
   PreguntaSiguiente() {
+    console.log('respuesta', this.respuesta);
     const repuestaItem = new RespuestaPregunta(this.respuesta, this.respuesta, this.pregunta);
     this.respuestaNueva.emit(repuestaItem);
     this.respuesta = null;
+    console.log('respuesta', this.respuesta);
   }
 }

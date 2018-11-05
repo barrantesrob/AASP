@@ -1,19 +1,19 @@
 <ion-grid no-padding>
     <ion-row>
-        <ion-col size="4"></ion-col>
+        <ion-col size="6"></ion-col>
         <ion-col text-center class="cell-1">
             {{Indicador.Detalle}}
         </ion-col>
     </ion-row>
     <ion-row style="border-bottom: groove;">
-        <ion-col size="4">
+        <ion-col size="6">
             <strong>
                INDICADOR
            </strong>
         </ion-col>
         <ion-col text-center class="cell-2">
             <strong>
-                        Inferior
+                        Li
                     </strong>
         </ion-col>
         <ion-col text-center class="cell-3">
@@ -23,12 +23,12 @@
         </ion-col>
         <ion-col text-center class="cell-4">
             <strong>
-                        Superior
+                        Ls
                     </strong>
         </ion-col>
     </ion-row>
     <ion-row *ngFor="let item of Indicador.Items">
-        <ion-col size="4">
+        <ion-col size="6">
             {{item.NombreIndicador}}
         </ion-col>
         <ion-col text-center class="cell-2">

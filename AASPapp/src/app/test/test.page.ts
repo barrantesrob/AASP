@@ -22,7 +22,7 @@ export class TestPage {
 
   constructor(private servicioPreguntas: PreguntasService,
     public servicioRespuestas: RespuestasService,
-    private _router: Router
+    private router: Router
     ) {
       this.pregunta = this.servicioPreguntas.Obtener(0);
     }
@@ -46,6 +46,12 @@ export class TestPage {
 
     // this.MostrarSemaforo();
      console.log('respuesta', this.resultado);
+  }
+
+  irPerfilActua() {
+    let rando = Math.random();
+    let rando2 = Math.random();
+    return this.router.navigateByUrl('/tabs/(test:resultado)?id= ' + rando + '&id2=' + rando2);
   }
 
 }

@@ -28,6 +28,7 @@ export class Resultado {
          let coeficiente: number;
          ({ constante, coeficiente } = this.ObtenerVariables(constante, coeficiente));
           this.Percentil = this.CalcularPercentilAGraficar(constante, coeficiente);
+          this.Percentil = 10;
      }
 
      private CalcularPercentilAGraficar(constante, coeficiente) {
