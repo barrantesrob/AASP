@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Platform } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-resultado',
@@ -8,18 +9,38 @@ import { Platform } from '@ionic/angular';
 })
 export class ResultadoPage implements OnInit {
 
-  constructor(platform: Platform) {
-    const n_id = platform.getQueryParam('id');
-    console.log('n_id', n_id);
+  opcionRespuesta;
+  percentil: number;
 
-    const n_id2 = platform.getQueryParam('id2');
-    console.log('n_id2', n_id2);
+  constructor(platform: Platform,
+    private router: Router) {
+    this.opcionRespuesta = platform.getQueryParam('opcionRespuesta');
+    console.log('OpcionRespuesta', this.opcionRespuesta);
+
+    this.percentil = +platform.getQueryParam('percentil');
+    console.log('percentil', this.percentil);
+    this.percentil = this.truncator(this.percentil, 1);
+    console.log('percentil', this.percentil);
 
 
    }
 
   ngOnInit() {
-    
+  }
+
+   truncator(num, digits) {
+    const numS = num.toString(),
+        decPos = numS.indexOf('.'),
+        substrLength = decPos == -1 ? numS.length : 1 + decPos + digits,
+        trimmedResult = numS.substr(0, substrLength),
+        finalResult = isNaN(trimmedResult) ? 0 : trimmedResult;
+
+    return parseFloat(finalResult);
+}
+
+  regresar() {
+    return this.router.navigateByUrl('/tabs/(test:test)');
+
   }
 
 }

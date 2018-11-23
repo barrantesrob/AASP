@@ -27,9 +27,10 @@
                     </strong>
         </ion-col>
     </ion-row>
-    <ion-row *ngFor="let item of Indicador.Items">
-        <ion-col size="6">
+    <ion-row *ngFor="let item of Indicador.Items; let index = index">
+        <ion-col size="6" (click)="mostrarIndicador(index)">
             {{item.NombreIndicador}}
+            <ion-icon name="help-circle"></ion-icon>
         </ion-col>
         <ion-col text-center class="cell-2">
             {{item.LimiteInferior}}

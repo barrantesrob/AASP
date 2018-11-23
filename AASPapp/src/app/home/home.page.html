@@ -11,15 +11,21 @@
                 <ion-item>
                     <img src='assets/img/banner.png'>
                 </ion-item>
-                <ion-header>
-                    <!--ion-list>
-                        <ion-item>
-                            <ion-label>Escoge el idioma</ion-label>
-                            <ion-select>
-                            </ion-select>
-                        </ion-item>
-                    </ion-list-->
-                </ion-header>
+                <ion-list>
+                    <ion-item>
+                        <ion-label>Escoge el idioma</ion-label>
+                        <ion-select (ionChange)="selecionarIdioma($event)" [(ngModel)]="idioma">
+                            <ion-select-option *ngFor="let item of idiomas" [value]="item.value">
+                                {{ item.label }}
+                            </ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                    <ion-item *ngIf="idioma=='en'" color="secondary">
+                        <ion-label text-wrap>
+                            <p>Language in development.</p>
+                        </ion-label>
+                    </ion-item>
+                </ion-list>
                 <ion-header>
                     Bienvenido
                 </ion-header>
@@ -46,8 +52,8 @@
                 </ion-item>
                 <ion-item text-center>
                     Muchas gracias,
-                    <br> Dr. Greibin Villegas
-                    <br> Barahona Universidad de Salamanca,
+                    <br> Dr. Greibin Villegas Barahona
+                    <br> Universidad de Salamanca,
                     <br> España
                     <br> Universidad Estatal a Distancia,
                     <br> Costa Rica

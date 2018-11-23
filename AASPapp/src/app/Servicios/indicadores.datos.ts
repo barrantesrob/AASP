@@ -363,7 +363,7 @@ export class Indicadores {
         {
             'LimiteInferior': 'Decil 9 y CI(95%)',
             'Decil' : 9,
-            'Items' : [,
+            'Items' : [
                         {
                             'NombreIndicador': 'Proporción de asignaturas aprobadas',
                             'LimiteInferior': '.72',

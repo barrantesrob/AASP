@@ -1,20 +1,55 @@
 <ion-header no-border>
     <h1>
-        Situacion Actual
+        Situación pedagógica actual
     </h1>
 </ion-header>
-<ion-list *ngFor="let datos of datosSemaforo">
-    <ion-header no-border>
-        <ion-item no-padding>
-            <strong *ngIf="datos.Items.length > 1">{{datos.Escala}}</strong>
-            <strong *ngIf="datos.Items.length == 1">{{datos.Items[0].Nombre}}</strong>
-            <ion-icon *ngIf="datos.Items.length == 1" slot="end" [color]="ObtenerColorSemaforo(datos.Items[0].Color)" name="radio-button-on"></ion-icon>
-        </ion-item>
-    </ion-header>
-    <div *ngIf="datos.Items.length > 1">
-        <ion-item *ngFor="let item of datos.Items">
-            {{item.Nombre}}
-            <ion-icon slot="end" [color]="ObtenerColorSemaforo(item.Color)" name="radio-button-on"></ion-icon>
-        </ion-item>
-    </div>
-</ion-list>
+<ion-row>
+    <ion-col text-center>
+        <img src='assets/img/semaforo.png'>
+    </ion-col>
+</ion-row>
+
+<ion-row *ngFor="let datos of datosSemaforo">
+    <ion-col *ngIf="datos.Items.length > 1">
+        <strong>
+                {{datos.Escala}}
+            </strong>
+        <ion-row *ngFor="let item of datos.Items">
+            <ion-col size="10">
+                {{item.Nombre}}
+            </ion-col>
+            <ion-col text-right>
+                <ion-icon [color]="ObtenerColorSemaforo(item.Color)" name="radio-button-on"></ion-icon>
+            </ion-col>
+        </ion-row>
+    </ion-col>
+
+    <ion-col *ngIf="datos.Items.length == 1" size="10">
+        <strong>
+            {{datos.Items[0].Nombre}}
+       </strong>
+    </ion-col>
+    <ion-col text-right *ngIf="datos.Items.length == 1">
+        <ion-icon large [color]="ObtenerColorSemaforo(datos.Items[0].Color)" name="radio-button-on"></ion-icon>
+    </ion-col>
+
+</ion-row>
+
+<!--
+
+    <ion-list no-border *ngFor="let datos of datosSemaforo">
+        <ion-header no-border>
+            <ion-item no-padding>
+                <strong no-border *ngIf="datos.Items.length > 1">{{datos.Escala}}</strong>
+                <strong no-border *ngIf="datos.Items.length == 1">{{datos.Items[0].Nombre}}</strong>
+                <ion-icon no-border *ngIf="datos.Items.length == 1" slot="end" [color]="ObtenerColorSemaforo(datos.Items[0].Color)" name="radio-button-on"></ion-icon>
+            </ion-item>
+        </ion-header>
+        <div no-border *ngIf="datos.Items.length > 1">
+            <ion-item no-border *ngFor="let item of datos.Items">
+                {{item.Nombre}}
+                <ion-icon no-border slot="end" [color]="ObtenerColorSemaforo(item.Color)" name="radio-button-on"></ion-icon>
+            </ion-item>
+        </div>
+    </ion-list>
+-->

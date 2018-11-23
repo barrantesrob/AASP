@@ -9,9 +9,9 @@ import { PreguntaPromedioComponent } from '../TipoPreguntas/pregunta-promedio/pr
 import { PreguntaEscolaridadComponent } from '../TipoPreguntas/pregunta-escolaridad/pregunta-escolaridad.component';
 import { PreguntaActividadComponent } from '../TipoPreguntas/pregunta-actividad/pregunta-actividad.component';
 import { PreguntaEscalaPromedioComponent } from '../TipoPreguntas/pregunta-escala-promedio/pregunta-escala-promedio.component';
-import { SituacionActualComponent } from '../resultado/situacion-actual/situacion-actual.component';
-import { GraficoComponent } from '../resultado/grafico/grafico.component';
-import { IndicadoresComponent } from '../resultado/indicadores/indicadores.component';
+// import { SituacionActualComponent } from '../resultado/situacion-actual/situacion-actual.component';
+// import { GraficoComponent } from '../resultado/grafico/grafico.component';
+// import { IndicadoresComponent } from '../resultado/indicadores/indicadores.component';
 
 
 
@@ -27,9 +27,10 @@ import { IndicadoresComponent } from '../resultado/indicadores/indicadores.compo
     PreguntaPromedioComponent,
     PreguntaEscolaridadComponent,
     PreguntaActividadComponent,
-    PreguntaEscalaPromedioComponent,
-    SituacionActualComponent,
-    GraficoComponent,
-    IndicadoresComponent]
+    PreguntaEscalaPromedioComponent
+  //  SituacionActualComponent,
+  //  GraficoComponent,
+   // IndicadoresComponent
+  ]
 })
 export class TestPageModule {}

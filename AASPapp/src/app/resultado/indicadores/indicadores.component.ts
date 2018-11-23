@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Indicadores } from '../../Servicios/indicadores.datos';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-indicadores',
@@ -10,17 +11,29 @@ export class IndicadoresComponent implements OnInit {
  @Input() Percentil: number;
  Indicador: any;
 
- constructor() {
+ constructor(public alertCtrl: AlertController) {
 }
 
 ngOnInit() {
-  console.log('this.Percentil', this.Percentil);
   const decil = Math.floor(this.Percentil / 10);
-  console.log('decil', decil);
   const indicadores = Indicadores.Datos;
-  console.log('indicadores', indicadores);
   this.Indicador = indicadores.find( item => item.Decil === decil);
-  console.log('Indicador', this.Indicador);
+  console.log('this.Indicador', this.Indicador);
+  }
+
+  mostrarIndicador(index) {
+    this.showAlert(index);
+  }
+
+  async showAlert(index) {
+    const indexImg = index + 1;
+    const alert = await this.alertCtrl.create({
+      // subHeader: 'subHeader',
+      message: '<img src="assets/img/formula' + indexImg + '.JPG">',
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
 
 }

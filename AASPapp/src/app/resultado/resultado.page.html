@@ -1,9 +1,38 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Resultado</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>AASP</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+    <div *ngIf="opcionRespuesta == 1">
+        <ion-card-header>
+            <h2 text-center>
+                Percentil del rendimiento académico esperado: <strong>
+            <ion-badge>{{percentil | number:'.1'}}%</ion-badge>            
+        </strong>
+            </h2>
+        </ion-card-header>
+        <diV text-center>
+            <app-grafico [Percentil]="percentil"></app-grafico>
+        </diV>
+        <app-indicadores padding [Percentil]="percentil"></app-indicadores>
+        <br>
+    </div>
+    <div *ngIf="opcionRespuesta == 2">
+        <app-situacion-actual></app-situacion-actual>
+    </div>
+    <div *ngIf="opcionRespuesta == 3">
+        <ion-card-header>
+            <h2 text-center>
+                Sugerencias pedagógicas
+            </h2>
+        </ion-card-header>
+        <diV text-center>
+            Futuro desarrollo
+        </diV>
+        <br>
+    </div>
 
+    <ion-button (click)="regresar();" shape="round" expand="block" fill="outline">Regresar</ion-button>
 </ion-content>

@@ -48,10 +48,27 @@ export class TestPage {
      console.log('respuesta', this.resultado);
   }
 
-  irPerfilActua() {
-    let rando = Math.random();
-    let rando2 = Math.random();
-    return this.router.navigateByUrl('/tabs/(test:resultado)?id= ' + rando + '&id2=' + rando2);
+  irRendimientoActual() {
+    const opcionRespuesta = 1;
+    return this.NavegarARespuesta(opcionRespuesta);
   }
 
+  irPerfilActua() {
+    const opcionRespuesta = 2;
+    return this.NavegarARespuesta(opcionRespuesta);
+  }
+
+  irSugerenciaPedagogica() {
+    const opcionRespuesta = 3;
+    return this.NavegarARespuesta(opcionRespuesta);
+  }
+
+
+
+  private NavegarARespuesta(opcionRespuesta: number) {
+    console.log(opcionRespuesta);
+    const percentil = this.resultado.Percentil;
+    console.log(percentil);
+    return this.router.navigateByUrl('/tabs/(test:resultado)?opcionRespuesta=' + opcionRespuesta + '&percentil=' + percentil);
+  }
 }
