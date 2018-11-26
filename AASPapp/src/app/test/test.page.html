@@ -24,6 +24,8 @@
                     </app-pregunta-actividad>
                     <app-pregunta-escala-promedio *ngIf="pregunta.Tipo == 5" [pregunta]="pregunta" (respuestaNueva)="PreguntaSiguiente($event)">
                     </app-pregunta-escala-promedio>
+                    <app-pregunta-demografica *ngIf="mostrarDemografica" (finalizarEvento)="finalizar($event)">
+                    </app-pregunta-demografica>
                 </ion-footer>
             </div>
         </ion-card-content>

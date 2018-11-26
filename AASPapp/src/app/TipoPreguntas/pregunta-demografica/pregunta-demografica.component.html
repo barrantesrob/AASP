@@ -1,0 +1,30 @@
+<div>
+    <ion-list>
+        <ion-item>
+            <ion-label color="primary">Fecha nacimiento:</ion-label>
+            <ion-datetime doneText="Aceptar" placeholder='Fecha nacimiento' cancelText="Cancelar" [(ngModel)]="fechaNacimiento" display-format="DD MM YYYY"></ion-datetime>
+            <!--ion-input type="number" placeholder="Edad" [(ngModel)]="edad"></ion-input-->
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary">Género:</ion-label>
+            <ion-select value="brown" placeholder="Género" [(ngModel)]="genero" okText="Aceptar" cancelText="Cancelar">
+                <ion-select-option value="M">Masculino</ion-select-option>
+                <ion-select-option value="F">Femenino</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary">País:</ion-label>
+            <ion-select value="brown" placeholder="País" [(ngModel)]="pais" okText="Aceptar" cancelText="Cancelar">
+                <ion-select-option *ngFor="let paisItem of paises" [value]="paisItem.id">{{paisItem.Nombre}}</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary">Datos son reales:</ion-label>
+            <ion-select value="brown" placeholder="Datos reales" [(ngModel)]="datosDePruba" okText="Aceptar" cancelText="Cancelar">
+                <ion-select-option value="R">Sí, dato reales</ion-select-option>
+                <ion-select-option value="P">No, datos de prueba</ion-select-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+</div>
+<ion-button shape="round" (click)="finalizar()" expand="block" fill="outline" [disabled]="!SonDatosValidos()" [color]="(!SonDatosValidos()) ? 'medium' : 'primary'">Finalizar</ion-button>

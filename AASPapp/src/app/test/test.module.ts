@@ -9,6 +9,8 @@ import { PreguntaPromedioComponent } from '../TipoPreguntas/pregunta-promedio/pr
 import { PreguntaEscolaridadComponent } from '../TipoPreguntas/pregunta-escolaridad/pregunta-escolaridad.component';
 import { PreguntaActividadComponent } from '../TipoPreguntas/pregunta-actividad/pregunta-actividad.component';
 import { PreguntaEscalaPromedioComponent } from '../TipoPreguntas/pregunta-escala-promedio/pregunta-escala-promedio.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PreguntaDemograficaComponent } from '../TipoPreguntas/pregunta-demografica/pregunta-demografica.component';
 // import { SituacionActualComponent } from '../resultado/situacion-actual/situacion-actual.component';
 // import { GraficoComponent } from '../resultado/grafico/grafico.component';
 // import { IndicadoresComponent } from '../resultado/indicadores/indicadores.component';
@@ -20,6 +22,7 @@ import { PreguntaEscalaPromedioComponent } from '../TipoPreguntas/pregunta-escal
     IonicModule,
     CommonModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forChild([{ path: '', component: TestPage }])
   ],
   declarations: [TestPage,
@@ -27,7 +30,8 @@ import { PreguntaEscalaPromedioComponent } from '../TipoPreguntas/pregunta-escal
     PreguntaPromedioComponent,
     PreguntaEscolaridadComponent,
     PreguntaActividadComponent,
-    PreguntaEscalaPromedioComponent
+    PreguntaEscalaPromedioComponent,
+    PreguntaDemograficaComponent
   //  SituacionActualComponent,
   //  GraficoComponent,
    // IndicadoresComponent

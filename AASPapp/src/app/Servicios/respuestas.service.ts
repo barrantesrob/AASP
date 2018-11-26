@@ -10,12 +10,18 @@ export class RespuestasService {
   constructor() { }
 
   respuestas = [];
+  // respuestasSimple = [];
   constanteBajo =  -181.48390;
   constanteMedio =	-207.57735;
   constanteAlto =	-226.42301;
 
   GuardarRespuesta(respuesta: RespuestaPregunta) {
     this.respuestas.push(respuesta);
+
+    // const respuestaSimple = {};
+    // respuestaSimple[respuesta.NumeroPregunta] = respuesta.Opcion;
+
+    // this.respuestasSimple.push(respuestaSimple);
   }
 
   ObtenerResultado() {
