@@ -3,7 +3,6 @@
         <ion-item>
             <ion-label color="primary">Fecha nacimiento:</ion-label>
             <ion-datetime doneText="Aceptar" placeholder='Fecha nacimiento' cancelText="Cancelar" [(ngModel)]="fechaNacimiento" display-format="DD MM YYYY"></ion-datetime>
-            <!--ion-input type="number" placeholder="Edad" [(ngModel)]="edad"></ion-input-->
         </ion-item>
         <ion-item>
             <ion-label color="primary">Género:</ion-label>
@@ -19,7 +18,7 @@
             </ion-select>
         </ion-item>
         <ion-item>
-            <ion-label color="primary">Datos son reales:</ion-label>
+            <ion-label color="primary">Datos reales:</ion-label>
             <ion-select value="brown" placeholder="Datos reales" [(ngModel)]="datosDePruba" okText="Aceptar" cancelText="Cancelar">
                 <ion-select-option value="R">Sí, dato reales</ion-select-option>
                 <ion-select-option value="P">No, datos de prueba</ion-select-option>
