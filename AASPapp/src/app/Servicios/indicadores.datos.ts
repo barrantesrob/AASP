@@ -27,16 +27,16 @@ export class Indicadores {
                         },
                         {
                             'NombreIndicador': 'Aretio Original',
-                            'LimiteInferior': '4.94',
-                            'Media': '6.03',
-                            'LimiteSuperior': '7.12',
+                            'LimiteInferior': '3.63',
+                            'Media': '4.33',
+                            'LimiteSuperior': '5.02',
                             'undefined': '1'
                         },
                         {
                             'NombreIndicador': 'Villegas et al.',
-                            'LimiteInferior': '4.81',
-                            'Media': '6.45',
-                            'LimiteSuperior': '8.10',
+                            'LimiteInferior': '2.93',
+                            'Media': '3.52',
+                            'LimiteSuperior': '4.12',
                             'undefined': '1'
                         }
                     ]},
@@ -67,16 +67,16 @@ export class Indicadores {
                         },
                         {
                             'NombreIndicador': 'Aretio Original',
-                            'LimiteInferior': '4.94',
-                            'Media': '6.03',
-                            'LimiteSuperior': '7.12',
+                            'LimiteInferior': '3.63',
+                            'Media': '4.33',
+                            'LimiteSuperior': '5.02',
                             'undefined': '1'
                         },
                         {
                             'NombreIndicador': 'Villegas et al.',
-                            'LimiteInferior': '4.81',
-                            'Media': '6.45',
-                            'LimiteSuperior': '8.10',
+                            'LimiteInferior': '2.93',
+                            'Media': '3.52',
+                            'LimiteSuperior': '4.12',
                             'undefined': '1'
                         }
                     ]},
@@ -107,16 +107,16 @@ export class Indicadores {
                         },
                         {
                             'NombreIndicador': 'Aretio Original',
-                            'LimiteInferior': '4.95',
-                            'Media': '5.78',
-                            'LimiteSuperior': '6.61',
+                            'LimiteInferior': '3.77',
+                            'Media': '4.40',
+                            'LimiteSuperior': '5.02',
                             'undefined': '2'
                         },
                         {
                             'NombreIndicador': 'Villegas et al.',
-                            'LimiteInferior': '5.54',
-                            'Media': '7.06',
-                            'LimiteSuperior': '8.58',
+                            'LimiteInferior': '3.26',
+                            'Media': '3.84',
+                            'LimiteSuperior': '4.43',
                             'undefined': '2'
                         }]
                     },
@@ -126,37 +126,37 @@ export class Indicadores {
             'Items' : [
                         {
                             'NombreIndicador': 'Proporción de asignaturas aprobadas',
-                            'LimiteInferior': '.65',
-                            'Media': '.69',
-                            'LimiteSuperior': '.73',
+                            'LimiteInferior': '.61',
+                            'Media': '.67',
+                            'LimiteSuperior': '.71',
                             'undefined': '3'
                         },
                         {
                             'NombreIndicador': 'Promedio simple de notas',
-                            'LimiteInferior': '6.22',
+                            'LimiteInferior': '6.15',
                             'Media': '6.47',
                             'LimiteSuperior': '6.71',
                             'undefined': '3'
                         },
                         {
                             'NombreIndicador': 'Promedio ponderado de notas',
-                            'LimiteInferior': '5.72',
+                            'LimiteInferior': '5.99',
                             'Media': '6.05',
                             'LimiteSuperior': '6.39',
                             'undefined': '3'
                         },
                         {
                             'NombreIndicador': 'Aretio Original',
-                            'LimiteInferior': '5.35',
-                            'Media': '6.16',
-                            'LimiteSuperior': '6.97',
+                            'LimiteInferior': '3.77',
+                            'Media': '4.60',
+                            'LimiteSuperior': '5.22',
                             'undefined': '3'
                         },
                         {
                             'NombreIndicador': 'Villegas et al.',
-                            'LimiteInferior': '6.58',
-                            'Media': '8.24',
-                            'LimiteSuperior': '9.90',
+                            'LimiteInferior': '3.26',
+                            'Media': '4.32',
+                            'LimiteSuperior': '4.98',
                             'undefined': '3'
                         }]
                     },
@@ -187,16 +187,16 @@ export class Indicadores {
                         },
                         {
                             'NombreIndicador': 'Aretio Original',
-                            'LimiteInferior': '4.69',
-                            'Media': '5.69',
-                            'LimiteSuperior': '6.68',
+                            'LimiteInferior': '5.11',
+                            'Media': '5.80',
+                            'LimiteSuperior': '6.49',
                             'undefined': '4'
                         },
                         {
                             'NombreIndicador': 'Villegas et al.',
-                            'LimiteInferior': '5.50',
-                            'Media': '7.05',
-                            'LimiteSuperior': '8.59',
+                            'LimiteInferior': '3.90',
+                            'Media': '4.50',
+                            'LimiteSuperior': '5.10',
                             'undefined': '4'
                         }]
                     },
@@ -206,9 +206,9 @@ export class Indicadores {
             'Items' : [
                         {
                             'NombreIndicador': 'Proporción de asignaturas aprobadas',
-                            'LimiteInferior': '.68',
-                            'Media': '.72',
-                            'LimiteSuperior': '.76',
+                            'LimiteInferior': '.65',
+                            'Media': '.69',
+                            'LimiteSuperior': '.73',
                             'undefined': '5'
                         },
                         {
@@ -227,16 +227,16 @@ export class Indicadores {
                         },
                         {
                             'NombreIndicador': 'Aretio Original',
-                            'LimiteInferior': '5.09',
-                            'Media': '6.25',
-                            'LimiteSuperior': '7.41',
+                            'LimiteInferior': '5.35',
+                            'Media': '6.10',
+                            'LimiteSuperior': '6.85',
                             'undefined': '5'
                         },
                         {
                             'NombreIndicador': 'Villegas et al.',
-                            'LimiteInferior': '7.71',
-                            'Media': '9.81',
-                            'LimiteSuperior': '11.92',
+                            'LimiteInferior': '4.50',
+                            'Media': '5.20',
+                            'LimiteSuperior': '5.90',
                             'undefined': '5'
                         }]
                     },
@@ -246,37 +246,37 @@ export class Indicadores {
             'Items' : [
                         {
                             'NombreIndicador': 'Proporción de asignaturas aprobadas',
-                            'LimiteInferior': '.70',
-                            'Media': '.74',
-                            'LimiteSuperior': '.78',
+                            'LimiteInferior': '.68',
+                            'Media': '.72',
+                            'LimiteSuperior': '.76',
                             'undefined': '6'
                         },
                         {
                             'NombreIndicador': 'Promedio simple de notas',
-                            'LimiteInferior': '6.35',
-                            'Media': '6.56',
-                            'LimiteSuperior': '6.78',
+                            'LimiteInferior': '6.78',
+                            'Media': '7.00',
+                            'LimiteSuperior': '7.22',
                             'undefined': '6'
                         },
                         {
                             'NombreIndicador': 'Promedio ponderado de notas',
-                            'LimiteInferior': '6.44',
-                            'Media': '6.68',
-                            'LimiteSuperior': '6.92',
+                            'LimiteInferior': '6.66',
+                            'Media': '6.90',
+                            'LimiteSuperior': '7.14',
                             'undefined': '6'
                         },
                         {
                             'NombreIndicador': 'Aretio Original',
-                            'LimiteInferior': '5.28',
-                            'Media': '6.31',
-                            'LimiteSuperior': '7.35',
+                            'LimiteInferior': '5.81',
+                            'Media': '6.50',
+                            'LimiteSuperior': '7.19',
                             'undefined': '6'
                         },
                         {
                             'NombreIndicador': 'Villegas et al.',
-                            'LimiteInferior': '8.86',
-                            'Media': '11.12',
-                            'LimiteSuperior': '13.38',
+                            'LimiteInferior': '5.09',
+                            'Media': '5.80',
+                            'LimiteSuperior': '6.51',
                             'undefined': '6'
                         }]
                     },
@@ -286,37 +286,37 @@ export class Indicadores {
             'Items' : [
                         {
                             'NombreIndicador': 'Proporción de asignaturas aprobadas',
-                            'LimiteInferior': '.69',
-                            'Media': '.73',
-                            'LimiteSuperior': '.76',
+                            'LimiteInferior': '.76',
+                            'Media': '.80',
+                            'LimiteSuperior': '.84',
                             'undefined': '7'
                         },
                         {
                             'NombreIndicador': 'Promedio simple de notas',
-                            'LimiteInferior': '6.52',
-                            'Media': '6.77',
-                            'LimiteSuperior': '7.01',
+                            'LimiteInferior': '7.25',
+                            'Media': '7.50',
+                            'LimiteSuperior': '7.75',
                             'undefined': '7'
                         },
                         {
                             'NombreIndicador': 'Promedio ponderado de notas',
-                            'LimiteInferior': '6.23',
-                            'Media': '6.47',
-                            'LimiteSuperior': '6.72',
+                            'LimiteInferior': '7.15',
+                            'Media': '7.40',
+                            'LimiteSuperior': '7.65',
                             'undefined': '7'
                         },
                         {
                             'NombreIndicador': 'Aretio Original',
-                            'LimiteInferior': '6.15',
-                            'Media': '7.24',
-                            'LimiteSuperior': '8.34',
+                            'LimiteInferior': '6.51',
+                            'Media': '7.20',
+                            'LimiteSuperior': '7.89',
                             'undefined': '7'
                         },
                         {
                             'NombreIndicador': 'Villegas et al.',
-                            'LimiteInferior': '9.64',
-                            'Media': '11.61',
-                            'LimiteSuperior': '13.57',
+                            'LimiteInferior': '6.23',
+                            'Media': '6.90',
+                            'LimiteSuperior': '7.57',
                             'undefined': '7'
                         }]
                     },
@@ -326,37 +326,37 @@ export class Indicadores {
             'Items' : [
                         {
                             'NombreIndicador': 'Proporción de asignaturas aprobadas',
-                            'LimiteInferior': '.68',
-                            'Media': '.72',
-                            'LimiteSuperior': '.76',
+                            'LimiteInferior': '.81',
+                            'Media': '.85',
+                            'LimiteSuperior': '.89',
                             'undefined': '8'
                         },
                         {
                             'NombreIndicador': 'Promedio simple de notas',
-                            'LimiteInferior': '6.53',
-                            'Media': '6.80',
-                            'LimiteSuperior': '7.07',
+                            'LimiteInferior': '7.93',
+                            'Media': '8.20',
+                            'LimiteSuperior': '8.47',
                             'undefined': '8'
                         },
                         {
                             'NombreIndicador': 'Promedio ponderado de notas',
-                            'LimiteInferior': '6.51',
-                            'Media': '6.78',
-                            'LimiteSuperior': '7.06',
+                            'LimiteInferior': '7.73',
+                            'Media': '8.00',
+                            'LimiteSuperior': '8.27',
                             'undefined': '8'
                         },
                         {
                             'NombreIndicador': 'Aretio Original',
-                            'LimiteInferior': '5.92',
-                            'Media': '7.01',
-                            'LimiteSuperior': '8.10',
+                            'LimiteInferior': '7.23',
+                            'Media': '7.90',
+                            'LimiteSuperior': '8.57',
                             'undefined': '8'
                         },
                         {
                             'NombreIndicador': 'Villegas et al.',
-                            'LimiteInferior': '11.53',
-                            'Media': '13.61',
-                            'LimiteSuperior': '15.69',
+                            'LimiteInferior': '6.84',
+                            'Media': '7.50',
+                            'LimiteSuperior': '8.16',
                             'undefined': '8'
                         }]
                     },
@@ -366,37 +366,37 @@ export class Indicadores {
             'Items' : [
                         {
                             'NombreIndicador': 'Proporción de asignaturas aprobadas',
-                            'LimiteInferior': '.72',
-                            'Media': '.75',
-                            'LimiteSuperior': '.79',
+                            'LimiteInferior': '.87',
+                            'Media': '.90',
+                            'LimiteSuperior': '.93',
                             'undefined': '9'
                         },
                         {
                             'NombreIndicador': 'Promedio simple de notas',
-                            'LimiteInferior': '6.54',
-                            'Media': '6.85',
-                            'LimiteSuperior': '7.16',
+                            'LimiteInferior': '8.49',
+                            'Media': '8.80',
+                            'LimiteSuperior': '9.11',
                             'undefined': '9'
                         },
                         {
                             'NombreIndicador': 'Promedio ponderado de notas',
-                            'LimiteInferior': '6.68',
-                            'Media': '6.97',
-                            'LimiteSuperior': '7.25',
+                            'LimiteInferior': '8.31',
+                            'Media': '8.60',
+                            'LimiteSuperior': '8.89',
                             'undefined': '9'
                         },
                         {
                             'NombreIndicador': 'Aretio Original',
-                            'LimiteInferior': '6.86',
-                            'Media': '8.20',
-                            'LimiteSuperior': '9.54',
+                            'LimiteInferior': '7.57',
+                            'Media': '8.30',
+                            'LimiteSuperior': '9.03',
                             'undefined': '9'
                         },
                         {
                             'NombreIndicador': 'Villegas et al.',
-                            'LimiteInferior': '12.12',
-                            'Media': '14.32',
-                            'LimiteSuperior': '16.52',
+                            'LimiteInferior': '7.45',
+                            'Media': '8.10',
+                            'LimiteSuperior': '8.75',
                             'undefined': '9'
                         }]
                     },
@@ -406,37 +406,37 @@ export class Indicadores {
             'Items': [
                             {
                                 'NombreIndicador': 'Proporción de asignaturas aprobadas',
-                                'LimiteInferior': '.74',
-                                'Media': '.77',
-                                'LimiteSuperior': '.81',
+                                'LimiteInferior': '.92',
+                                'Media': '.95',
+                                'LimiteSuperior': '.98',
                                 'undefined': '10'
                             },
                             {
                                 'NombreIndicador': 'Promedio simple de notas',
-                                'LimiteInferior': '6.78',
-                                'Media': '6.99',
-                                'LimiteSuperior': '7.21',
+                                'LimiteInferior': '9.18',
+                                'Media': '9.40',
+                                'LimiteSuperior': '9.62',
                                 'undefined': '10'
                             },
                             {
                                 'NombreIndicador': 'Promedio ponderado de notas',
-                                'LimiteInferior': '6.88',
-                                'Media': '7.07',
-                                'LimiteSuperior': '7.27',
+                                'LimiteInferior': '9.01',
+                                'Media': '9.20',
+                                'LimiteSuperior': '9.39',
                                 'undefined': '10'
                             },
                             {
                                 'NombreIndicador': 'Aretio Original',
-                                'LimiteInferior': '8.88',
-                                'Media': '9.96',
-                                'LimiteSuperior': '11.03',
+                                'LimiteInferior': '8.48',
+                                'Media': '9.10',
+                                'LimiteSuperior': '9.72',
                                 'undefined': '10'
                             },
                             {
                                 'NombreIndicador': 'Villegas et al.',
-                                'LimiteInferior': '15.43',
-                                'Media': '18.27',
-                                'LimiteSuperior': '21.11',
+                                'LimiteInferior': '8.35',
+                                'Media': '9.00',
+                                'LimiteSuperior': '9.65',
                                 'undefined': '10'
                             }]
                         }
